@@ -21,7 +21,7 @@ router.get('/products', function(req, res, next) {
 router.get('/services', function(req, res, next) {
   res.render('index', { title: 'Services' });
 });
-/* GET Contact Us page. */
+/* route to localhost:3000/Contact to open 'Contact' page. */
 router.get('/Contact', function(req, res, next) {
   res.render('index', { title: 'Contact' });
 });
