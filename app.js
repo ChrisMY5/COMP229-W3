@@ -14,7 +14,7 @@ let app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs'); // npm express -e figuer view engine to ejs
 
-// series of activation
+// all series of activation
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
