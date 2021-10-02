@@ -1,67 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-  <!-- CSS section-->
-  <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all/min.css'>
-  <link rel='stylesheet' href='/Content/app.css' />
-  
-</head>
-<body>
-  <!-- main navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Chris' World</a> <!-- Logo in this line with href-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-1g-0">       
-          <li class="nav-item">
-            <a class="nav-link" href="/home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/services">Services</a>
-          </li> <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <div class= "container">
-    <h1></h1>
-    <h1>
-      <%= title %>
-    </h1>
-    <p>Welcome to the <%= title %>
-    </p>  
-</div>
+<%- include('./components/head.ejs'); %>
+<!-- head section retrieves all codes from ./components/head.ejs file-->
+
+
+  <!-- header section: codes moved to the header.ejs file
+       However, this section should retrieve the header.ejs file -> view/components/herder.ejs
+       Reference info.: 'include' code on the EJS.co website-->
+  <%- include('./components/header.ejs'); %> <!-- Exact path needed and the .ejs file is in the same folder under VIEWS--> 
+  <!-- header section end-->
+
+  <!-- Main Section-->
+  <%- include('./components/main.ejs'); %>
+<!-- Main section end-->
+
 
 <!-- Footer section -->
-<nav class="navbar fixed-bottom navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Copyright &copy; 2021 Man Young Oh</a>
-  </div>
-</nav>
-
+<%- include('./components/footer.ejs'); %>
+<!-- footer section retrieves all codes from ./components/footer.ejs file-->
+<!-- Footer section end-->
 
 
   <!-- Script section-->
-  <script src="/jquery/dist/jquery.min.js"></script>
-  <script src="/bootstrap/dist/js/bootstrap.min.css"></script>
-  <script src="/Scripts/app.js"></script>
-</body>
-</html>
+  <%- include('./components/footer.ejs'); %>
+  <!-- Script section end-->

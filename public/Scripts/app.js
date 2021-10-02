@@ -1,7 +1,7 @@
 // IIFE -- Immediately Invoked Function Expression
 (function(){
     
-    function start();
+    function start()
     {
         console.log("App Started...");
     }
