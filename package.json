@@ -4,7 +4,7 @@
   "private": true,
   
   "scripts": {
-    "start": "node index.js"    /* <--back to previous local start, then " node ./server.js  */
+    "start": "node index.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
