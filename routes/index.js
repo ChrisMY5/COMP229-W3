@@ -14,11 +14,11 @@ router.get('/home', function(req, res, next) {
 });
 /* route to localhost and activate to load 'About' page. */
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About Me', page: 'about'  });
+  res.render('index', { title: 'Home', page: 'about'  });
 });
 /* route to localhost and activate to load 'Projects' page. */
 router.get('/projects', function(req, res, next) {
-  res.render('index', { title: 'Projects', page: 'project'  });
+  res.render('index', { title: 'Projects', page: 'projects'  });
 });
 /* route to localhost and activate to load 'Services' page. */
 router.get('/services', function(req, res, next) {
