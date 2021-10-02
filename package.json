@@ -2,8 +2,9 @@
   "name": "week3-1",
   "version": "0.0.0",
   "private": true,
+  
   "scripts": {
-    "start": "node ./server.js"
+    "start": "node index.js"    /* <--back to previous local start, then " node ./server.js  */
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
