@@ -16,7 +16,7 @@ app.set('view engine', 'ejs'); // npm express -e figuer view engine to ejs
 
 // all series of activation
 app.use(logger('dev'));
-app.use(express.json());
+app.use(express.json()); 
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
