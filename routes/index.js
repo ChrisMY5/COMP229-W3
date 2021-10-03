@@ -10,22 +10,22 @@ router.get('/', function(req, res, next) {
 });
 /* route to call and load 'Home' page. */
 router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home', page: 'home'  });
+  res.render('index', { title: 'Home', page: 'home' });
 });
 /* route to call and load 'about' page. */
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About', page: 'about'  });
+  res.render('index', { title: 'About', page: 'about' });
 });
 /* route to call and load 'projects' page. */
 router.get('/projects', function(req, res, next) {
-  res.render('index', { title: 'Projects', page: 'projects'  });
+  res.render('index', { title: 'Projects', page: 'projects' });
 });
 /* route to call and load 'services' page. */
 router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services', page: 'services'  });
+  res.render('index', { title: 'Services', page: 'services' });
 });
 /* route to call and load 'contact' page. */
 router.get('/Contact', function(req, res, next) {
-  res.render('index', { title: 'Contact', page: 'contact'  });
+  res.render('index', { title: 'Contact', page: 'contact' });
 });
 module.exports = router;
